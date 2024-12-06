@@ -6,8 +6,8 @@ export const languages = {
   export const defaultLang = 'es';
   
   export const ui = {
-    en: {
-      'saludo':'Hi, my name is Jonathan',
+    es: {
+      'saludo':'Hola, mi nombre:',
       'nombre':'Jonathan Herrera',
       'profecion':"Desarrollador Full Stack",
       'descripcion':"Hola, soy Jonathan Herrera, desarrollador y diseñador web. Meapasiona crear sitios web hermosos, accesibles y de altorendimiento. También soy un gran fan de Astro, la forma más rápida de construir sitios web modernos.",
@@ -27,8 +27,9 @@ export const languages = {
       'aboutMe3':'Mi enfoque principal es siempre mejorar la experiencia del usuario y desarrollar software que sea fácil de usar y accesible. Además, disfruto del trabajo en equipo y de colaborar para resolver problemas complejos de manera eficiente y creativa.',
 
     },
-    es: {
-      'saludo':'Hola, mi nombre es Jonathan',
+    en: {
+      
+      'saludo':'Hi, my name is:',
       'nombre':'Jonathan Herrera',
       'profecion':"Full Stack Developer",
       'descripcion':"Hi, I'm Jonathan Herrera, a web developer and designer. I'm passionate about creating beautiful, accessible, and high-performance websites. I'm also a big fan of Astro, the fastest way to build modern websites.",
