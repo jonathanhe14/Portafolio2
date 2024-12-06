@@ -1,0 +1,34 @@
+
+<header  id="header" class=" text-white p-4 fixed top-0 w-full z-50 transition-all duration-300 bg-primario/50 backdrop-blur-lg">
+    <div class="container mx-auto flex justify-between items-center">
+        <img class="logo w-12" src="/LogoJH.svg" alt="Astro logo" />
+      <nav class="space-x-4">
+        <a href="/" class="hover:text-complementario ">Inicio</a>
+        <a href="/" class="hover:text-complementario">Sobre mí</a>
+        <a href="/" class="hover:text-complementario">Proyectos</a>
+        <a href="/" class="hover:text-complementario">Contacto</a>
+      </nav>
+    </div>
+  </header>
+  <script>
+    let lastScrollTop = 0;
+const header = document.getElementById('header');
+
+window.addEventListener('scroll', () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (header) {
+    if (scrollTop > lastScrollTop) {
+      // Hide the header when scrolling down
+      header.style.transform = 'translateY(-100%)';
+    } else {
+      // Show the header when scrolling up
+      header.style.transform = 'translateY(0)';
+      header.style.backgroundColor = 'rgba(31, 45, 53, 0.8)';  // Background with opacity
+    }
+  }
+  lastScrollTop = scrollTop;
+});// Importing the JavaScript file
+  </script>
+
+ 
