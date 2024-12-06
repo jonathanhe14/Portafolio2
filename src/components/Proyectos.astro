@@ -1,11 +1,15 @@
-<section id="proyectos" class="mt-36">
+---
+import { Image } from 'astro:assets';
+import myImage from '../../public/image-ej.png';
+---
+<section  class="mt-36" >
 
-    <ul id="Esto va a contener la lista de proyectos">
+    <ul>
         <li class="flex items-start relative w-full h-[300px] mb-20">
             <div class="flex-1">
                 <h3 class="text-gray-300 text-2xl mb-4">Proyecto de mascotas</h3>
                 <div class="bg-secundario p-5 flex-1 w-[600px] z-10 relative">
-                    <p class="text-base leading-relaxed mb-4 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate dolorem ab iste dolorum repellat dolore inventore iure autem nostrum, reiciendis modi aperiam dolor eaque laboriosam. Corrupti beatae minima placeat?</p>
+                    <p class="text-sm leading-relaxed mb-4 text-gray-300">Desarrollé una plataforma de reservas utilizando HTML, CSS, JavaScript y bases de datos SQL, diseñada para conectar a usuarios que buscaban servicios para sus mascotas con proveedores que ofrecían dichos servicios. La aplicación permitía gestionar las reservas de manera eficiente y mejoraba la experiencia tanto para clientes como para proveedores.</p>
                 </div>
                 <ul class="flex space-x-4  mt-5">
                     <li class="text-sm">JavaScript</li>
@@ -14,15 +18,16 @@
                     <li class="text-sm">JQuery</li>
                 </ul>
                 <div id="links" class="mt-3 ">
-                    <a href=""></a>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <a href="https://github.com/jonathanhe14" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" id="svg-icon">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                       </svg>
-                    <a href=""></a>
+                    
                 </div>
             </div>
             <div id="image-container" class="ml-4 absolute bottom-0 right-0 w-[500px] h-[300px] z-0" >
-                <img src="/public/image-ej.png" alt="Imagen del proyecto" class="w-full h-full object-cover ">
+                <!-- <img  src="https://drive.google.com/file/d/153HgL-QpoSsSLspmgQ99nATfx-8LBH38/view?usp=sharing" alt="Imagen del proyecto" class="w-full h-full object-cover "> -->
+                <Image src={myImage} alt="Imagen del proyecto" class="w-full h-full object-cover" />
             </div>
         </li>
 
@@ -32,22 +37,22 @@
                 <img src="/public/image-ej.png" alt="Imagen del proyecto" class="w-full h-full object-cover">
             </div>
             <div class="flex-1 max-w-[600px] ">
-                <h3 class="text-gray-300 text-2xl mb-4 justify-end flex">Proyecto de mascotas</h3>
+                <h3 class="text-gray-300 text-2xl mb-4 justify-end flex">RentRide</h3>
                 <div class="bg-secundario p-5 z-10 relative ">
-                    <p class="text-base leading-relaxed mb-4 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate dolorem ab iste dolorum repellat dolore inventore iure autem nostrum, reiciendis modi aperiam dolor eaque laboriosam. Corrupti beatae minima placeat?</p>
+                    <p class="text-sm leading-relaxed mb-4 text-gray-300">Desarrollé una plataforma de alquiler de vehículos con .NET y Azure, implementando gestión de reservas y usuarios, y usando SQL para almacenar información. Trabajamos bajo SCRUM, superando desafíos de integración en la nube para entregar una solución escalable.</p>
                 </div>
                 <ul class="flex space-x-4 mt-5 justify-end">
-                    <li class="text-sm">JavaScript</li>
-                    <li class="text-sm">CSS</li>
-                    <li class="text-sm">HTML</li>
-                    <li class="text-sm">JQuery</li>
+                    <li class="text-sm">.NET</li>
+                    <li class="text-sm">SLQ</li>
+                    <li class="text-sm">Azure</li>
+                    
                 </ul>
                 <div id="links" class="flex mt-3 justify-end">
-                    <a href=""></a>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <a href="https://github.com/jonathanhe14/RentNRide" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" id="svg-icon">
                         <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                     </svg>
-                    <a href=""></a>
+                    
                 </div>
             </div>
 
@@ -57,19 +62,20 @@
         <ul id="Esto va a contener la lista de proyectos">
             <li class="flex items-start relative w-full h-[300px] mb-32">
                 <div class="flex-1">
-                    <h3 class="text-gray-300 text-2xl mb-4">Proyecto de mascotas</h3>
+                    <h3 class="text-gray-300 text-2xl mb-4">FitNation</h3>
                     <div class="bg-secundario p-5 flex-1 w-[600px] z-10 relative">
-                        <p class="text-base leading-relaxed mb-4 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cupiditate dolorem ab iste dolorum repellat dolore inventore iure autem nostrum, reiciendis modi aperiam dolor eaque laboriosam. Corrupti beatae minima placeat?</p>
+                        <p class="text-sm leading-relaxed mb-4 text-gray-300">Desarrollé una página de reserva de clases para un gimnasio utilizando Next.js, AWS Amplify y DynamoDB. La plataforma permite gestionar reservas y almacenar datos de usuarios y clases de manera eficiente.</p>
                     </div>
                     <ul class="flex space-x-4  mt-5">
-                        <li class="text-sm">JavaScript</li>
-                        <li class="text-sm">CSS</li>
-                        <li class="text-sm">HTML</li>
-                        <li class="text-sm">JQuery</li>
+                        <li class="text-sm">Next.js</li>
+                        <li class="text-sm">Tailwind</li>
+                        <li class="text-sm">Amplify</li>
+                        <li class="text-sm">DinamoDB</li>
+                        <li class="text-sm">TypeScript</li>
                     </ul>
                     <div id="links" class="mt-3 ">
-                        <a href=""></a>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                        <a href="https://github.com/jonathanhe14/ProyectoC2" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6" id="svg-icon">
                             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                           </svg>
                         <a href=""></a>
