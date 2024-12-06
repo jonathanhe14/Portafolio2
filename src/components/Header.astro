@@ -14,11 +14,11 @@ function traslatedPath(basePath: string, lang: string): string {
     <div class="container mx-auto flex justify-between items-center">
         <img class="logo w-12" src="/LogoJH.svg" alt="Astro logo" />
       <nav class="space-x-4">
-        <a href="/" class="hover:text-complementario ">Inicio</a>
-        <a href="#About" class="hover:text-complementario">Sobre mí</a>
-        <a href="#proyectos" class="hover:text-complementario">Proyectos</a>
-        <a href="#Contact" class="hover:text-complementario">Contacto</a>
-        <ul>
+        <a href="/" class="hover:text-complementario ">{t('inicio')}</a>
+        <a href="#About" class="hover:text-complementario">{t('sobreMi')}</a>
+        <a href="#proyectos" class="hover:text-complementario">{t('proyectos')}</a>
+        <a href="#Contact" class="hover:text-complementario">{t('contacto')}</a>
+        <ul class="flex">
           {Object.entries(languages).map(([lang, label]) => (
             <li>
               <a href={traslatedPath("/", lang)}>{label}</a>

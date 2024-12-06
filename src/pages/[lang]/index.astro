@@ -27,20 +27,17 @@ const t = useTranslations(lang);
           >{t('saludo')}</span
         >
         <h1 class="text-gray-200 text-8xl font-bold pb-4 pt-5 tracking-widest">
-          Jonathan Herrera.
+          {t('nombre')}
         </h1>
         <h1 class="text-gray-300 text-6xl font-bold pb-12 tracking-widest">
-          Desarrollador Full Stack<span
+          {t('profecion')}<span
             class="inline-block bg-complementario w-2 h-2 rounded-full animate-pulseDot"
           ></span>
         </h1>
 
         <div class="flex">
           <p class="text-left mt-4 text-lg mb-10 text-gray-300">
-            Hola, soy Jonathan Herrera, desarrollador y diseñador web. Me
-            apasiona crear sitios web hermosos, accesibles y de alto
-            rendimiento. También soy un gran fan de Astro, la forma más rápida
-            de construir sitios web modernos.
+            {t('descripcion')}
           </p>
         </div>
         <a
@@ -59,7 +56,7 @@ const t = useTranslations(lang);
       class="text-complementario text-3xl mb-4 relative inline-block font-bold after:content-[''] after:block after:w-full after:h-[2px] after:bg-complementario after:ml-4 after:mt-2"
       id="proyectos"
     >
-      Conoce un poco mas de mi trabajo
+    {t('trabajo')}
     </h2>
     <Proyectos />
 

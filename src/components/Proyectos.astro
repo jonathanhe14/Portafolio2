@@ -1,5 +1,9 @@
 ---
 import { Image } from 'astro:assets';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 ---
 <section  class="mt-36" >
@@ -7,9 +11,9 @@ import { Image } from 'astro:assets';
     <ul>
         <li class="flex items-start relative w-full h-[300px] mb-20">
             <div class="flex-1">
-                <h3 class="text-gray-300 text-2xl mb-4">Proyecto de mascotas</h3>
+                <h3 class="text-gray-300 text-2xl mb-4">{t('ProyectName1')}</h3>
                 <div class="bg-secundario p-5 flex-1 w-[600px] z-10 relative">
-                    <p class="text-sm leading-relaxed mb-4 text-gray-300">Desarrollé una plataforma de reservas utilizando HTML, CSS, JavaScript y bases de datos SQL, diseñada para conectar a usuarios que buscaban servicios para sus mascotas con proveedores que ofrecían dichos servicios. La aplicación permitía gestionar las reservas de manera eficiente y mejoraba la experiencia tanto para clientes como para proveedores.</p>
+                    <p class="text-sm leading-relaxed mb-4 text-gray-300">{t('proyectDescription1')}</p>
                 </div>
                 <ul class="flex space-x-4  mt-5">
                     <li class="text-sm">JavaScript</li>
@@ -47,9 +51,9 @@ import { Image } from 'astro:assets';
               />
             </div>
             <div class="flex-1 max-w-[600px] ">
-                <h3 class="text-gray-300 text-2xl mb-4 justify-end flex">RentRide</h3>
+                <h3 class="text-gray-300 text-2xl mb-4 justify-end flex">{t('ProyectName2')}</h3>
                 <div class="bg-secundario p-5 z-10 relative ">
-                    <p class="text-sm leading-relaxed mb-4 text-gray-300">Desarrollé una plataforma de alquiler de vehículos con .NET y Azure, implementando gestión de reservas y usuarios, y usando SQL para almacenar información. Trabajamos bajo SCRUM, superando desafíos de integración en la nube para entregar una solución escalable.</p>
+                    <p class="text-sm leading-relaxed mb-4 text-gray-300">{t('proyectDescription2')}</p>
                 </div>
                 <ul class="flex space-x-4 mt-5 justify-end">
                     <li class="text-sm">.NET</li>
@@ -72,9 +76,9 @@ import { Image } from 'astro:assets';
         <ul id="Esto va a contener la lista de proyectos">
             <li class="flex items-start relative w-full h-[300px] mb-32">
                 <div class="flex-1">
-                    <h3 class="text-gray-300 text-2xl mb-4">FitNation</h3>
+                    <h3 class="text-gray-300 text-2xl mb-4">{t('ProyectName3')}</h3>
                     <div class="bg-secundario p-5 flex-1 w-[600px] z-10 relative">
-                        <p class="text-sm leading-relaxed mb-4 text-gray-300">Desarrollé una página de reserva de clases para un gimnasio utilizando Next.js, AWS Amplify y DynamoDB. La plataforma permite gestionar reservas y almacenar datos de usuarios y clases de manera eficiente.</p>
+                        <p class="text-sm leading-relaxed mb-4 text-gray-300">{t('proyectDescription3')}</p>
                     </div>
                     <ul class="flex space-x-4  mt-5">
                         <li class="text-sm">Next.js</li>
