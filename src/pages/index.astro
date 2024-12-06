@@ -7,58 +7,58 @@ import Footer from "../components/Footer.astro";
 import Proyectos from "../components/Proyectos.astro";
 import Lineas from "../components/Lineas.astro";
 import Form from "../components/Form.astro";
-
 ---
 
-
-
-<Layout title="Jonathan Herrera" >
+<Layout title="Jonathan Herrera">
   <Header />
-<Lineas />
+  <Lineas />
 
+  <main
+    class="mx-auto p-4 w-[55%] max-w-[calc(100%-1rem)] text-white text-xl leading-relaxed"
+  >
+    <div class="flex items-center justify-center min-h-screen -mt-10">
+      <div>
+        <span class="text-complementario tracking-wider font-medium mb-10"
+          >Hola, mi nombres es:</span
+        >
+        <h1 class="text-gray-200 text-8xl font-bold pb-4 pt-5 tracking-widest">
+          Jonathan Herrera.
+        </h1>
+        <h1 class="text-gray-300 text-6xl font-bold pb-12 tracking-widest">
+          Desarrollador Full Stack<span
+            class="inline-block bg-complementario w-2 h-2 rounded-full animate-pulseDot"
+          ></span>
+        </h1>
 
-  <main  class="mx-auto p-4 w-[55%] max-w-[calc(100%-1rem)] text-white text-xl leading-relaxed">
-	<div class="flex items-center justify-center min-h-screen -mt-10">
-		<div>
-		  <span class="text-complementario tracking-wider font-medium mb-10"
-			>Hola, mi nombres es:</span
-		  >
-		  <h1 class="text-gray-200 text-8xl font-bold pb-4 pt-5 tracking-widest">
-			Jonathan Herrera.
-		  </h1>
-		  <h1 class="text-gray-300 text-6xl font-bold pb-12 tracking-widest">
-			Desarrollador Full Stack<span
-			  class="inline-block bg-complementario w-2 h-2 rounded-full animate-pulseDot"
-			></span>
-		  </h1>
-  
-		  <div class="flex">
-			<p class="text-left mt-4 text-lg mb-10 text-gray-300">
-			  Hola, soy Jonathan Herrera, desarrollador y diseñador web. Me
-			  apasiona crear sitios web hermosos, accesibles y de alto
-			  rendimiento. También soy un gran fan de Astro, la forma más rápida
-			  de construir sitios web modernos.
-			</p>
-		  </div>
-		  <a
-			href="/public/archives/CV-EN.pdf"
-			download="CV-EN.pdf"
-			class="inline-block text-center w-36 h-10 border-2 border-complementario text-complementario font-semibold rounded-lg transform transition-all duration-300 hover:translate-y-[-4px] hover:shadow-lg hover:shadow-complementario"
-		  >
-			CV
-		  </a>
-		</div>
-	  </div>
-	  
+        <div class="flex">
+          <p class="text-left mt-4 text-lg mb-10 text-gray-300">
+            Hola, soy Jonathan Herrera, desarrollador y diseñador web. Me
+            apasiona crear sitios web hermosos, accesibles y de alto
+            rendimiento. También soy un gran fan de Astro, la forma más rápida
+            de construir sitios web modernos.
+          </p>
+        </div>
+        <a
+          href="/public/archives/CV-EN.pdf"
+          download="CV-EN.pdf"
+          class="inline-block text-center w-36 h-10 border-2 border-complementario text-complementario font-semibold rounded-lg transform transition-all duration-300 hover:translate-y-[-4px] hover:shadow-lg hover:shadow-complementario"
+          id="cv"
+        >
+          CV
+        </a>
+      </div>
+    </div>
+
     <About />
     <h2
-      class="text-complementario text-3xl mb-4 relative inline-block font-bold after:content-[''] after:block after:w-full after:h-[2px] after:bg-complementario after:ml-4 after:mt-2" id="proyectos"
+      class="text-complementario text-3xl mb-4 relative inline-block font-bold after:content-[''] after:block after:w-full after:h-[2px] after:bg-complementario after:ml-4 after:mt-2"
+      id="proyectos"
     >
       Conoce un poco mas de mi trabajo
     </h2>
     <Proyectos />
 
-	<Form />
+    <Form />
   </main>
   <Footer />
 </Layout>
@@ -73,13 +73,6 @@ import Form from "../components/Form.astro";
     font-size: 20px;
     line-height: 1.6;
   } */
-
-
-
-
-
-
-
 
   .astro-a {
     position: absolute;
@@ -102,6 +95,12 @@ import Form from "../components/Form.astro";
 </style>
 
 <script>
+  const cv = document.getElementById("cv");
+  if (cv) {
+    cv.addEventListener("click", () => {
+      descargarCV();
+    });
+  }
   function descargarCV() {
     const link = document.createElement("a");
     link.href = "../public/archives/CV-EN.pdf";
