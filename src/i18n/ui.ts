@@ -28,6 +28,7 @@ export const languages = {
       'contact1':"Ponte en contacto conmigo",
       'contact2':'Actualmente, estoy en busca de nuevas oportunidades laborales. Si tienes alguna propuesta, duda o simplemente deseas ponerte en contacto, no dudes en escribirme. Estoy siempre dispuesto a responder y encantado de conocer nuevas ideas o colaborar en proyectos interesantes. ¡No dudes en contactarme, estaré encantado de hablar contigo!',
       "sobreMiT":'Sobre mi',
+      'botonC':'Contactame',
 
     },
     en: {
@@ -53,5 +54,6 @@ export const languages = {
       'contact1':"Get in touch with me",
       'contact2':"I am currently looking for new job opportunities. If you have any proposals, questions, or just want to get in touch, feel free to write to me. I am always willing to respond and happy to hear new ideas or collaborate on interesting projects. Don't hesitate to contact me, I will be happy to talk to",
       "sobreMiT":'About me',
+      'botonC':'Contact me',
     },
   } as const;

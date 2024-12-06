@@ -13,19 +13,25 @@ function traslatedPath(basePath: string, lang: string): string {
 <header  id="header" class=" text-white p-4 fixed top-0 w-full z-50 transition-all duration-300 bg-primario/50 backdrop-blur-lg">
     <div class="container mx-auto flex justify-between items-center">
         <img class="logo w-12" src="/LogoJH.svg" alt="Astro logo" />
-      <nav class="space-x-4">
-        <a href="/" class="hover:text-complementario ">{t('inicio')}</a>
-        <a href="#About" class="hover:text-complementario">{t('sobreMi')}</a>
-        <a href="#proyectos" class="hover:text-complementario">{t('proyectos')}</a>
-        <a href="#Contact" class="hover:text-complementario">{t('contacto')}</a>
-        <ul class="flex">
-          {Object.entries(languages).map(([lang, label]) => (
-            <li>
-              <a href={traslatedPath("/", lang)}>{label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+        <nav class="flex items-center justify-between space-x-4">
+          <!-- Enlaces de navegación -->
+          <div class="flex space-x-4">
+            <a href="/" class="hover:text-complementario">{t('inicio')}</a>
+            <a href="#About" class="hover:text-complementario">{t('sobreMi')}</a>
+            <a href="#proyectos" class="hover:text-complementario">{t('proyectos')}</a>
+            <a href="#Contact" class="hover:text-complementario">{t('contacto')}</a>
+          </div>
+        
+          <!-- Selector de idiomas -->
+          <ul class="flex space-x-2">
+            {Object.entries(languages).map(([lang, label]) => (
+              <li>
+                <a href={traslatedPath("/", lang)} class="hover:text-complementario">{label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        
     </div>
   </header>
   <script>
