@@ -16,7 +16,7 @@
 const header = document.getElementById('header');
 
 window.addEventListener('scroll', () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let scrollTop = document.documentElement.scrollTop;
 
   if (header) {
     if (scrollTop > lastScrollTop) {
