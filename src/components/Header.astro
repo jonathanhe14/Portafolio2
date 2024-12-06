@@ -1,3 +1,14 @@
+---
+import { languages } from '../i18n/ui';
+import { getLangFromUrl,useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url) ?? "";
+const t = useTranslations(lang);
+function traslatedPath(basePath: string, lang: string): string {
+  return `${basePath}${lang}/`; // Puedes ajustar la estructura de la URL según sea necesario
+}
+
+---
 
 <header  id="header" class=" text-white p-4 fixed top-0 w-full z-50 transition-all duration-300 bg-primario/50 backdrop-blur-lg">
     <div class="container mx-auto flex justify-between items-center">
@@ -7,7 +18,13 @@
         <a href="#About" class="hover:text-complementario">Sobre mí</a>
         <a href="#proyectos" class="hover:text-complementario">Proyectos</a>
         <a href="#Contact" class="hover:text-complementario">Contacto</a>
-
+        <ul>
+          {Object.entries(languages).map(([lang, label]) => (
+            <li>
+              <a href={traslatedPath("/", lang)}>{label}</a>
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   </header>
