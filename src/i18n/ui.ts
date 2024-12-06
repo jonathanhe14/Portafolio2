@@ -25,6 +25,9 @@ export const languages = {
       'aboutMe1':'¡Hola! Soy Jonathan, un apasionado desarrollador de software con un enfoque en crear soluciones que hagan la vida de las personas más sencilla. Mi interés por la tecnología comenzó desde joven, cuando empecé a desarrollar pequeñas aplicaciones en la consola. Desde entonces, mi curiosidad no ha dejado de crecer, lo que me llevó a estudiar Ingeniería de Software y a buscar constantemente nuevos retos para mejorar mis habilidades.',
       'aboutMe2':'A lo largo de mi camino, me he especializado en tecnologías como Next.js y React, y me entusiasma poder crear aplicaciones con estas herramientas que ofrecen gran flexibilidad y rendimiento. Me gusta profundizar en estas tecnologías y aplicar buenas prácticas para construir soluciones robustas y escalables.',
       'aboutMe3':'Mi enfoque principal es siempre mejorar la experiencia del usuario y desarrollar software que sea fácil de usar y accesible. Además, disfruto del trabajo en equipo y de colaborar para resolver problemas complejos de manera eficiente y creativa.',
+      'contact1':"Ponte en contacto conmigo",
+      'contact2':'Actualmente, estoy en busca de nuevas oportunidades laborales. Si tienes alguna propuesta, duda o simplemente deseas ponerte en contacto, no dudes en escribirme. Estoy siempre dispuesto a responder y encantado de conocer nuevas ideas o colaborar en proyectos interesantes. ¡No dudes en contactarme, estaré encantado de hablar contigo!',
+      "sobreMiT":'Sobre mi',
 
     },
     en: {
@@ -47,5 +50,8 @@ export const languages = {
       'aboutMe1':'Hello! I am Jonathan, a passionate software developer with a focus on creating solutions that make people\'s lives easier. My interest in technology began at a young age when I started developing small applications on the console. Since then, my curiosity has only grown, leading me to study Software Engineering and constantly seek new challenges to improve my skills.',
       'aboutMe2':'Along the way, I have specialized in technologies like Next.js and React, and I am excited to create applications with these tools that offer great flexibility and performance. I like to delve into these technologies and apply best practices to build robust and scalable solutions.',
       'aboutMe3':'My main focus is always to improve the user experience and develop software that is easy to use and accessible. In addition, I enjoy teamwork and collaborating to solve complex problems efficiently and creativel',
+      'contact1':"Get in touch with me",
+      'contact2':"I am currently looking for new job opportunities. If you have any proposals, questions, or just want to get in touch, feel free to write to me. I am always willing to respond and happy to hear new ideas or collaborate on interesting projects. Don't hesitate to contact me, I will be happy to talk to",
+      "sobreMiT":'About me',
     },
   } as const;
