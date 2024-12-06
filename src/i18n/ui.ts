@@ -10,7 +10,7 @@ export const languages = {
       'saludo':'Hola, mi nombre:',
       'nombre':'Jonathan Herrera',
       'profecion':"Desarrollador Full Stack",
-      'descripcion':"Hola, soy Jonathan Herrera, desarrollador y diseñador web. Meapasiona crear sitios web hermosos, accesibles y de altorendimiento. También soy un gran fan de Astro, la forma más rápida de construir sitios web modernos.",
+      'descripcion':"Hola, soy Jonathan Herrera, desarrollador y diseñador web. Me apasiona crear sitios web hermosos, accesibles y de altorendimiento. También soy un gran fan de Astro, la forma más rápida de construir sitios web modernos.",
       'trabajo':"Conoce un poco mas de mi trabajo",
       'inicio':"Inicio",
       'sobreMi':"Sobre mi",
